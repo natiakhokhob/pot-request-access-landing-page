@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: hidden;
+   overflow-y: hidden;
 
 }
 
@@ -111,7 +111,7 @@ filter: opacity(1);
 padding-left: 3.2rem;
 }
 
-button{
+#button{
     box-shadow: 0rem 2.5rem 2rem -2rem rgba(84, 230, 175, 0.497913);
     background-color:  #54E6AF;
     width: 32.6rem;
@@ -125,12 +125,26 @@ line-height: 2.8rem;
 color:  #121725;
 border-style: none;
 mix-blend-mode: normal;
+z-index: 1;
 
 }
-button:hover{
+#button:hover{
     background-color: #B3FFE2;
+    cursor: pointer;
 }
-
+#button:active{
+    background-color: #B3FFE2;
+   
+}
+.error{
+    font-size:1.2rem;
+    line-height: 1.42rem;
+    margin-left: 3.2rem;
+    order:4;
+    color: #FB3E3E;
+   display: none;
+    margin-top: 0.8rem;
+}
 
 
 
@@ -138,14 +152,7 @@ button:hover{
     display: none;
 }
 
-.error{
-    font-size:1.2rem;
-    line-height: 1.42rem;
-    margin-left: 3.2rem;
-    order:4;
-    color: #FB3E3E;
-    display: none;
-}
+
 @media screen and (min-width: 768px) {
     body{
         align-items: flex-start;
@@ -227,7 +234,7 @@ margin-top: 3.1rem;
  .tablet-icons{
     display: block;
  }
- button{
+ #button{
     width: 16.2rem;
     height: 4.6rem;
     margin-right: 0.5rem;

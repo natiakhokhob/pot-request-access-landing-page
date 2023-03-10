@@ -8,6 +8,9 @@ button.addEventListener("click", () => {
   emailValidation(input, error);
 });
 
+
+
+
 function emailValidation(inputText, errorr) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (inputText.value.match(mailformat)){
